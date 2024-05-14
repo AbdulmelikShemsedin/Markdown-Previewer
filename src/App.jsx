@@ -45,7 +45,7 @@ And here. | Okay. | I think we get it.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+![freeCodeCamp Logo](Abdulmelik-Logo.jpg)
 `
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className='container'>
-      <h2><img src='Abdulmelik-Logo.jpg' /> Markdown Previewer</h2>
+      <h2>Markdown Previewer</h2>
       <div className='editDiv'>
         <h3>Editor</h3>
         <textarea id='editor' value={text} onChange={handleChange}></textarea>
