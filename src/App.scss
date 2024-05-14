@@ -1,0 +1,88 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+
+  h2 {
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.editDiv {
+  width: 600px;
+  background-color: aqua;
+  margin: 20px 0;
+  border-radius: 15px;
+
+  h3 {
+    margin: 0 0 0 20px;
+    padding: 7px;
+    color: black;
+  }
+
+  textarea {
+    margin: 0 7px;
+    width: 96%;
+    min-height: 250px;
+    overflow-y: auto;
+  }
+}
+
+.previewDiv {
+  background-color: aqua;
+  margin: 20px 0;
+  width: 850px;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+
+  h3 {
+    margin: 0 0 0 20px;
+    padding: 7px;
+    color: black;
+  }
+
+  #preview {
+    margin: 0;
+    padding: 10px;
+    width: 97.65%;
+    min-height: 225px;
+    background-color: hsl(69, 74%, 82%);
+    color: black;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .editDiv {
+    scale: 0.95;
+  }
+
+  .previewDiv {
+    scale: 0.85;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .editDiv {
+    scale: 0.75;
+    margin: 0;
+  }
+
+  .previewDiv {
+    margin: 0;
+    scale: 0.6;
+  }
+}
